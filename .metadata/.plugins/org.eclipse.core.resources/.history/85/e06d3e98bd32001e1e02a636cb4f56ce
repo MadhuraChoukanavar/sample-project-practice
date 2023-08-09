@@ -1,0 +1,11 @@
+package com.mnc.studentdal.service;
+
+import com.mnc.studentdal.entity.StudentDetails;
+
+public interface StudentService {
+	
+	
+	StudentDetails saveStudent (StudentDetails studentDetails);
+	StudentDetails updateStudent (StudentDetails studentDetails);
+	void deleteStudent (StudentDetails studentDetails);
+}

@@ -1,0 +1,5 @@
+package com.mnc.studentdal.repository;
+
+public class StudentRepository {
+
+}

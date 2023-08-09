@@ -1,0 +1,5 @@
+package com.mnc.studentdal.entity;
+
+public class StudentDetails {
+
+}

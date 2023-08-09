@@ -1,0 +1,5 @@
+package com.mnc.studentdal.service;
+
+public interface StudentService {
+
+}

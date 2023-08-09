@@ -1,0 +1,40 @@
+package com.mnc.studentdal.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.mnc.studentdal.entity.StudentDetails;
+import com.mnc.studentdal.repository.StudentRepository;
+@Service
+public class StudentServiceImpl implements StudentService {
+	
+	
+	@Autowired
+	private StudentRepository studentRepo;
+	@Override
+	public StudentDetails saveStudent(StudentDetails studentDetails) {
+		
+		return studentRepo.save(studentDetails);
+	}
+
+	@Override
+	public StudentDetails updateStudent(StudentDetails studentDetails) {
+		// TODO Auto-generated method stub
+		return studentRepo.save(studentDetails);;
+	}
+
+	@Override
+	public void deleteStudent(StudentDetails studentDetails) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List<StudentDetails> findAllStudents() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

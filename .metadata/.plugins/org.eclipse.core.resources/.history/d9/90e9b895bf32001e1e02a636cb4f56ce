@@ -1,0 +1,14 @@
+package com.mnc.studentdal.controller;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class StudentController {
+	
+	
+	public String showStudent()
+	{
+		return "createStudent";
+	}
+
+}

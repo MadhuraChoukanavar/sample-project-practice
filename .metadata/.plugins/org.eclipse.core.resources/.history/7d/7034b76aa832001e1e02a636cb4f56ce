@@ -1,0 +1,10 @@
+package com.mnc.location.service;
+
+import com.mnc.location.entity.LocationEntity;
+
+public interface LocationService {
+	
+	
+	LocationEntity saveLocationDetails(LocationEntity locatin)
+
+}

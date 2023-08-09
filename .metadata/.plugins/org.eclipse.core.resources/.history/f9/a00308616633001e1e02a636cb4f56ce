@@ -1,0 +1,31 @@
+package com.mnc.studentdal.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jmx.export.annotation.ManagedAttribute;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.mnc.studentdal.entity.StudentDetails;
+import com.mnc.studentdal.service.StudentService;
+
+@Controller
+public class StudentController {
+	@Autowired
+	private StudentService studServ;
+	
+	@RequestMapping("/showStudent")
+	public String showStudent()
+	{
+		return "createStudent";
+	}
+	
+	
+	public String saveStudentDetails(@ModelAttribute("studentDetails") StudentDetails studDetails)
+	{
+		studServ.saveStudent(studDetails);
+		
+		return "createStudent";
+	}
+
+}

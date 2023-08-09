@@ -1,0 +1,5 @@
+package com.mnc.location.entity;
+
+public class LocationEntity {
+
+}

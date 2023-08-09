@@ -1,0 +1,5 @@
+package com.mnc.customer.repository;
+
+public interface CustomerRepository {
+
+}

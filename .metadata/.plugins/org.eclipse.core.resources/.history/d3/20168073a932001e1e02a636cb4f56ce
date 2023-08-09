@@ -1,0 +1,39 @@
+package com.mnc.location.service;
+
+import java.util.List;
+
+import com.mnc.location.entity.LocationEntity;
+
+public class LocationServiceImpl implements LocationService {
+
+	@Override
+	public LocationEntity saveLocationDetails(LocationEntity locatin) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public LocationEntity updateLocationDetails(LocationEntity location) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteLocation(LocationEntity location) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public LocationEntity getLocationById(long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<LocationEntity> getAllLocation() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,23 @@
+package com.mnc.studentdal;
+
+import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.mnc.studentdal.entity.StudentDetails;
+import com.mnc.studentdal.repository.StudentRepository;
+
+@SpringBootTest
+class StudentdalApplicationTests {
+	@Autowired
+	private StudentRepository repo;
+	@Test
+	void createStudent() {
+		StudentDetails s1=new StudentDetails("sahana", 30000);
+		StudentDetails s2=new StudentDetails("aparna", 30000);
+	repo.save(s1);
+	
+		
+	}
+
+}

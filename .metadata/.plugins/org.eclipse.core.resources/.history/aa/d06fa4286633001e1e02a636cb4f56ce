@@ -1,0 +1,23 @@
+package com.mnc.studentdal.controller;
+
+import org.springframework.jmx.export.annotation.ManagedAttribute;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class StudentController {
+	
+	@RequestMapping("/showStudent")
+	public String showStudent()
+	{
+		return "createStudent";
+	}
+	
+	
+	public String saveStudentDetails(@ModelAttribute("studentDetails"))
+	{
+		return "createStudent";
+	}
+
+}

@@ -1,0 +1,33 @@
+package com.mnc.location.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.mnc.location.entity.LocationEntity;
+import com.mnc.location.service.LocationServiceImpl;
+
+@Controller
+public class LocationController {
+	@Autowired
+	 private LocationServiceImpl serviceLoc;
+	
+	@RequestMapping("/showCreate")
+	public String showCreate()
+	{
+		return "createLocation";
+	}
+	@RequestMapping("/savelocation")
+	public String saveLocation(@ModelAttribute("locationEntity")  LocationEntity location, ModelMap modelMap)
+	{
+		
+		LocationEntity locationDetails = serviceLoc.saveLocationDetails(location);
+		String msg="location saved with id :"+locationDetails.getId();
+		modelMap.addAllAttributes("msg",msg);
+		return "createLocation";
+		
+	}
+
+}

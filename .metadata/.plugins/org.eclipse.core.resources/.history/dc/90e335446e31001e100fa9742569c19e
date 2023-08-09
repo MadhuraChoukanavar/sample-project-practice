@@ -1,0 +1,7 @@
+package com.mnc.studentdal.repository;
+
+import org.springframework.data.repository.CrudRepository;
+
+public interface StudentRepository extends CrudRepository<StudentDetails, long> {
+
+}
